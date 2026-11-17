@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { fontDisplay, fontSans } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -9,8 +10,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="uk" className="h-full">
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html
+      lang="uk"
+      className={`${fontDisplay.variable} ${fontSans.variable} h-full`}
+    >
+      <body className="min-h-full flex flex-col bg-canvas text-ink font-sans">
+        {children}
+      </body>
     </html>
   );
 }

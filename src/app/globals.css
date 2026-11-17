@@ -1,3 +1,60 @@
 @import "tailwindcss";
 
-/* Design tokens (@theme) and base styles will be added in the next step. */
+/*
+  Design tokens. `static` keeps every variable in the output even when no
+  class uses it yet, so Storybook can show the full token set.
+  Spacing is not declared here: only the default Tailwind steps 2, 3, 4, 6, 8
+  (8, 12, 16, 24, 32 px) are used, for example p-4.
+*/
+@theme static {
+  /* Colors: by role. The default Tailwind palette is removed. */
+  --color-*: initial;
+  --color-canvas: #0a0a0a; /* page background; also text on accent buttons */
+  --color-surface: #151515; /* cards */
+  --color-line: #ffd400; /* dividers and card borders */
+  --color-accent: #ffd400; /* primary buttons, links, highlights */
+  --color-ink: #ffffff; /* main text */
+  --color-ink-muted: #a3a3a3; /* secondary text */
+  --color-danger: #ff6b6b; /* error text and field border in error state */
+
+  /* Fonts. Files are loaded in src/app/fonts.ts. */
+  --font-display: var(--font-unbounded), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  /* Text sizes with line height, letter spacing and weight. Defaults removed.
+     Font family is separate: use font-display with text-lead and text-heading. */
+  --text-*: initial;
+  --text-caption: 0.8125rem; /* 13px */
+  --text-caption--line-height: 1.4;
+  --text-caption--letter-spacing: 0;
+  --text-body: 1rem; /* 16px */
+  --text-body--line-height: 1.6;
+  --text-body--letter-spacing: 0;
+  --text-label: 0.9375rem; /* 15px */
+  --text-label--line-height: 1.4;
+  --text-label--letter-spacing: 0;
+  --text-label--font-weight: 400;
+  --text-button: 0.9375rem; /* 15px */
+  --text-button--letter-spacing: 0;
+  --text-button--font-weight: 500;
+  --text-lead: 1.25rem; /* 20px, Unbounded; the logo is text-lead font-bold */
+  --text-lead--line-height: 1.3;
+  --text-lead--letter-spacing: 0;
+  --text-lead--font-weight: 600;
+  --text-heading: 1.5rem; /* 24px, Unbounded */
+  --text-heading--line-height: 1.35;
+  --text-heading--letter-spacing: 0;
+  --text-heading--font-weight: 600;
+
+  /* Radii: corners are square, but both tokens are declared. */
+  --radius-*: initial;
+  --radius-control: 0px; /* buttons and fields */
+  --radius-card: 0px; /* cards */
+
+  /* Image aspect ratios. Default ratios are kept. */
+  --aspect-cover: 13 / 7; /* work cover and hero image */
+
+  /* Page layout only, not for components. */
+  --container-page: 1280px; /* content width of a page */
+  --spacing-section: 120px; /* gap between large page sections */
+}
