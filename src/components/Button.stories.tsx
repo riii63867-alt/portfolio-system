@@ -31,7 +31,7 @@ const meta = {
 ### Стани
 
 - **default**: як описано вище.
-- **hover**: primary заливається \`ink\`; у secondary межа й текст стають \`accent\`.
+- **hover**: primary заливається \`accent-alt\`, текст лишається \`canvas\`; у secondary межа й текст стають \`accent\`.
 - **focus** (клавіша Tab): контур \`accent-alt\`, його не прибирають.
 - **disabled**: заливка \`surface\`, межа й текст \`ink-muted\`. Кнопка має \`aria-disabled="true"\`, тому лишається у фокусі з клавіатури, але клік не спрацьовує. Причину передай у \`disabledReason\`: вона зв'язується з кнопкою через \`aria-describedby\` і читається скрінрідером.
 

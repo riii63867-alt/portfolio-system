@@ -23,7 +23,7 @@ const base =
 
 const variants = {
   primary:
-    "border-accent bg-accent text-canvas cursor-pointer hover:border-ink hover:bg-ink",
+    "border-accent bg-accent text-canvas cursor-pointer hover:border-accent-alt hover:bg-accent-alt",
   secondary:
     "border-ink-muted bg-transparent text-ink cursor-pointer hover:border-accent hover:text-accent",
 } as const;
