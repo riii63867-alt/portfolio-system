@@ -70,7 +70,7 @@ import { Button } from "@/components/Button";
   args: {
     children: "Написати мені",
     variant: "primary",
-    disabled: false,
+    disabled: true,
     disabledReason: "Кнопка недоступна, поки форму не заповнено",
   },
 } satisfies Meta<typeof Button>;
