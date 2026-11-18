@@ -7,6 +7,11 @@ const meta = {
   tags: ["autodocs"],
   parameters: {
     docs: {
+      source: {
+        // Storybook prints `disabled` for true; show the explicit value.
+        transform: (code: string) =>
+          code.replace(/\bdisabled(?=\s|>|\/)/g, "disabled={true}"),
+      },
       description: {
         component: `
 Кнопка дії зі скошеною (вправо) формою. Текст усередині прямий.
@@ -55,7 +60,7 @@ import { Button } from "@/components/Button";
 
 <Button variant="primary" onClick={send}>Написати мені</Button>
 <Button variant="secondary">Мої роботи</Button>
-<Button disabled disabledReason="Спочатку заповни форму">Надіслати</Button>
+<Button disabled={true} disabledReason="Спочатку заповни форму">Надіслати</Button>
 \`\`\`
 `,
       },
