@@ -20,7 +20,7 @@
 
 Оголошені в блоці `@theme` у `src/app/globals.css`, шрифти підключені в `src/app/fonts.ts`. Стандартні кольори, розміри тексту й радіуси Tailwind скинуто, тож інших класів цих груп немає. Назви за роллю, не за кольором.
 
-- Кольори (`bg-*`, `text-*`, `border-*`): `canvas`, `surface`, `line`, `accent`, `ink`, `ink-muted`, `danger`. Текст на жовтій кнопці: `text-canvas`.
+- Кольори (`bg-*`, `text-*`, `border-*`): `canvas`, `surface`, `line`, `accent`, `accent-alt`, `ink`, `ink-muted`, `danger`. Текст на жовтій кнопці: `text-canvas`.
 - Шрифти: `font-display` (Unbounded, ваги 600 і 700), `font-sans` (Inter, ваги 400 і 500).
 - Розміри тексту (`text-*`, з висотою рядка, трекінгом і жирністю): `caption`, `body`, `label`, `button`, `lead`, `heading`. `lead` і `heading` ставимо разом із `font-display`. Логотип: `font-display text-lead font-bold`.
 - Радіуси (`rounded-*`): `control`, `card`. Обидва `0px`.

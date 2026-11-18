@@ -1,0 +1,114 @@
+﻿import { Meta, ColorPalette, ColorItem, Typeset } from "@storybook/addon-docs/blocks";
+
+<Meta title="Foundations/Tokens" />
+
+<div>
+
+# Токени
+
+Усі значення беруться зі змінних блоку `@theme` у `src/app/globals.css`. Тут нічого не вписано вручну: змінюєш токен там, і сторінка оновлюється.
+
+## Кольори
+
+<ColorPalette>
+  <ColorItem
+    title="Фон і поверхні"
+    subtitle="canvas, surface, line"
+    colors={{
+      canvas: "var(--color-canvas)",
+      surface: "var(--color-surface)",
+      line: "var(--color-line)",
+    }}
+  />
+  <ColorItem
+    title="Акцент"
+    subtitle="accent, accent-alt"
+    colors={{
+      accent: "var(--color-accent)",
+      "accent-alt": "var(--color-accent-alt)",
+    }}
+  />
+  <ColorItem
+    title="Текст"
+    subtitle="ink, ink-muted"
+    colors={{
+      ink: "var(--color-ink)",
+      "ink-muted": "var(--color-ink-muted)",
+    }}
+  />
+  <ColorItem
+    title="Помилка"
+    subtitle="danger"
+    colors={{ danger: "var(--color-danger)" }}
+  />
+</ColorPalette>
+
+## Шрифти
+
+### font-display
+
+<Typeset
+  fontFamily="var(--font-display)"
+  fontSizes={["var(--text-heading)", "var(--text-lead)"]}
+  fontWeight="var(--text-heading--font-weight)"
+  sampleText="Роман Андрущенко, UI/UX дизайнер"
+/>
+
+### font-sans
+
+<Typeset
+  fontFamily="var(--font-sans)"
+  fontSizes={[
+    "var(--text-body)",
+    "var(--text-label)",
+    "var(--text-button)",
+    "var(--text-caption)",
+  ]}
+  fontWeight="var(--text-body--font-weight, 400)"
+  sampleText="Проєктую інтерфейси вебу й мобільних застосунків"
+/>
+
+### Розміри тексту (класи)
+
+<div className="sb-unstyled flex flex-col gap-4 bg-canvas p-6 text-ink">
+  <div className="font-display text-heading">text-heading</div>
+  <div className="font-display text-lead">text-lead</div>
+  <div className="font-sans text-body">text-body</div>
+  <div className="font-sans text-label">text-label</div>
+  <div className="font-sans text-button">text-button</div>
+  <div className="font-sans text-caption text-ink-muted">text-caption</div>
+</div>
+
+## Радіуси
+
+<div className="sb-unstyled flex gap-6 bg-canvas p-6 text-ink">
+  <div className="flex flex-col gap-2">
+    <div className="size-8 rounded-control border border-ink-muted bg-surface" />
+    <span className="font-sans text-caption">rounded-control</span>
+  </div>
+  <div className="flex flex-col gap-2">
+    <div className="size-8 rounded-card border border-ink-muted bg-surface" />
+    <span className="font-sans text-caption">rounded-card</span>
+  </div>
+</div>
+
+## Пропорції
+
+<div className="sb-unstyled flex flex-col gap-2 bg-canvas p-6 text-ink">
+  <div className="aspect-cover w-1/2 border border-ink-muted bg-surface" />
+  <span className="font-sans text-caption">aspect-cover</span>
+</div>
+
+## Відступи
+
+Дозволені кроки: 2, 3, 4, 6, 8.
+
+<div className="sb-unstyled flex items-end gap-6 bg-canvas p-6 text-ink">
+  <div className="flex flex-col gap-2"><div className="size-2 bg-accent" /><span className="font-sans text-caption">2</span></div>
+  <div className="flex flex-col gap-2"><div className="size-3 bg-accent" /><span className="font-sans text-caption">3</span></div>
+  <div className="flex flex-col gap-2"><div className="size-4 bg-accent" /><span className="font-sans text-caption">4</span></div>
+  <div className="flex flex-col gap-2"><div className="size-6 bg-accent" /><span className="font-sans text-caption">6</span></div>
+  <div className="flex flex-col gap-2"><div className="size-8 bg-accent" /><span className="font-sans text-caption">8</span></div>
+</div>
+
+</div>

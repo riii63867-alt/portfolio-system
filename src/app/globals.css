@@ -15,7 +15,8 @@
   --color-accent: #ffd400; /* primary buttons, links, highlights */
   --color-ink: #ffffff; /* main text */
   --color-ink-muted: #a3a3a3; /* secondary text */
-  --color-danger: #ff6b6b; /* error text and field border in error state */
+  --color-accent-alt: #00b3ff; /* secondary accent: focus ring, active menu item, icons, secondary borders */
+  --color-danger: #ff4d8d; /* error text and field border in error state */
 
   /* Fonts. Files are loaded in src/app/fonts.ts. */
   --font-display: var(--font-unbounded), ui-sans-serif, system-ui, sans-serif;
