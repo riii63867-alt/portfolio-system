@@ -26,18 +26,18 @@ const meta = {
 ### Варіанти
 
 - **primary**: заливка \`accent\`, текст \`canvas\`. Головна дія на екрані.
-- **secondary**: без заливки, межа \`ink-muted\`, текст \`ink\`. Другорядна дія.
+- **secondary**: заливка \`canvas\`, межа й текст \`accent\`. Другорядна дія.
 
 ### Стани
 
 - **default**: як описано вище.
-- **hover**: primary заливається \`accent-alt\`, текст лишається \`canvas\`; у secondary межа й текст стають \`accent\`.
+- **hover**: primary заливається \`accent-alt\`, текст лишається \`canvas\`; у secondary межа й текст стають \`accent-alt\`, заливка не змінюється.
 - **focus** (клавіша Tab): контур \`accent-alt\`, його не прибирають.
 - **disabled**: заливка \`surface\`, межа й текст \`ink-muted\`. Кнопка має \`aria-disabled="true"\`, тому лишається у фокусі з клавіатури, але клік не спрацьовує. Причину передай у \`disabledReason\`: вона зв'язується з кнопкою через \`aria-describedby\` і читається скрінрідером.
 
 ### Токени
 
-Кольори: \`accent\`, \`accent-alt\`, \`canvas\`, \`ink\`, \`ink-muted\`, \`surface\`.
+Кольори: \`accent\`, \`accent-alt\`, \`canvas\`, \`ink-muted\`, \`surface\`.
 Текст: \`text-button\`, шрифт \`font-sans\`. Радіус: \`rounded-control\`.
 Відступи: \`px-6\`, \`py-3\`.
 

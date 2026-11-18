@@ -7,7 +7,7 @@ export type ButtonProps = Omit<
   ButtonHTMLAttributes<HTMLButtonElement>,
   "disabled"
 > & {
-  /** Вигляд кнопки: `primary` (заливка) або `secondary` (лише межа). */
+  /** Вигляд кнопки: `primary` (заливка) або `secondary` (темна заливка, жовта межа). */
   variant?: "primary" | "secondary";
   /** Вимикає кнопку через `aria-disabled`: вона лишається у фокусі з клавіатури, але не спрацьовує. */
   disabled?: boolean;
@@ -25,7 +25,7 @@ const variants = {
   primary:
     "border-accent bg-accent text-canvas cursor-pointer hover:border-accent-alt hover:bg-accent-alt",
   secondary:
-    "border-ink-muted bg-transparent text-ink cursor-pointer hover:border-accent hover:text-accent",
+    "border-accent bg-canvas text-accent cursor-pointer hover:border-accent-alt hover:text-accent-alt",
 } as const;
 
 // Disabled looks the same for both variants and keeps text contrast high.
