@@ -21,7 +21,7 @@ export default function Home() {
           <h1 className="font-display text-heading text-ink">
             Roman Andrushchenko, UI/UX дизайнер
           </h1>
-          <p className="max-w-3xl font-display text-lead text-ink-muted">
+          <p className="max-w-text font-display text-lead text-ink-muted">
             Проєктую інтерфейси вебу й мобільних застосунків: від аналізу
             конкурентів і шляху користувача до макета.
           </p>

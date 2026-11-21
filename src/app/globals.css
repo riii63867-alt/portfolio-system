@@ -55,6 +55,9 @@
   /* Image aspect ratios. Default ratios are kept. */
   --aspect-cover: 13 / 7; /* work cover and hero image */
 
+  /* Readable text width: max-w-text caps lines of running text. */
+  --container-text: 40rem; /* 640px, readable text width */
+
   /* Page layout only, not for components. */
   --container-page: 1280px; /* content width of a page */
   --spacing-section: 120px; /* gap between large page sections */
