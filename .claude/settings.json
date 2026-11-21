@@ -7,10 +7,31 @@
       "Bash(vercel deploy --target production *)",
       "Bash(vercel promote *)",
       "Bash(vercel rollback *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(vercel.cmd --prod *)",
+      "Bash(vercel.cmd deploy --prod *)",
+      "Bash(vercel.cmd deploy --target=production *)",
+      "Bash(vercel.cmd deploy --target production *)",
+      "Bash(vercel.cmd promote *)",
+      "Bash(vercel.cmd rollback *)",
+      "PowerShell(vercel --prod *)",
+      "PowerShell(vercel deploy --prod *)",
+      "PowerShell(vercel deploy --target=production *)",
+      "PowerShell(vercel deploy --target production *)",
+      "PowerShell(vercel promote *)",
+      "PowerShell(vercel rollback *)",
+      "PowerShell(vercel.cmd --prod *)",
+      "PowerShell(vercel.cmd deploy --prod *)",
+      "PowerShell(vercel.cmd deploy --target=production *)",
+      "PowerShell(vercel.cmd deploy --target production *)",
+      "PowerShell(vercel.cmd promote *)",
+      "PowerShell(vercel.cmd rollback *)",
+      "PowerShell(git push *)"
     ],
     "deny": [
-      "Read(./.env*)"
+      "Read(./.env*)",
+      "Bash(cat .env*)",
+      "PowerShell(Get-Content .env*)"
     ]
   }
 }
