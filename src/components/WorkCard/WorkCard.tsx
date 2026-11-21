@@ -21,7 +21,7 @@ export type WorkCardProps = {
 
 // Whole card is one link: square corners from the card radius token, spacing from the scale.
 const base =
-  "group flex flex-col gap-4 rounded-card border bg-surface p-4 transition-colors " +
+  "group flex flex-1 flex-col gap-4 rounded-card border bg-surface p-4 transition-colors " +
   "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-alt";
 
 const enabledStyle = "border-line hover:border-accent-alt";
@@ -54,7 +54,7 @@ export function WorkCard({
     : { href };
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex h-full flex-col gap-2">
       <a
         {...linkProps}
         className={`${base} ${disabled ? disabledStyle : enabledStyle}`}
