@@ -30,7 +30,9 @@
 
 ## Компоненти
 
-Заповнимо далі.
+- `Button` (`src/components/Button.tsx`): кнопка дії, `variant` primary або secondary, `disabled` з `disabledReason`.
+- `WorkCard` (`src/components/WorkCard`): картка роботи (обкладинка `aspect-cover`, назва, опис), уся картка є посиланням; `disabled` для роботи без кейсу.
+- `Navigation` (`src/components/Navigation`): навігація сайту, пропси `items` і `currentHref`; на вузькому екрані меню з кнопкою-бургером.
 
 ## Правила
 
