@@ -55,6 +55,9 @@
   /* Image aspect ratios. Default ratios are kept. */
   --aspect-cover: 13 / 7; /* work cover and hero image */
 
+  /* Container widths: the default Tailwind sizes (max-w-3xl and so on) are removed. */
+  --container-*: initial;
+
   /* Readable text width: max-w-text caps lines of running text. */
   --container-text: 40rem; /* 640px, readable text width */
 
