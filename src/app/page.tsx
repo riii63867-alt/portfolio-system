@@ -29,7 +29,7 @@ export default function Home() {
         </section>
         <section id="cases" className="mt-section scroll-mt-8">
           <h2 className="sr-only">Вибрані роботи</h2>
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 lg:grid-cols-3">
             <WorkCard
               title="JobMatch"
               description="Концепт мобільного застосунку для швидкого пошуку підробітку й спеціалістів поруч."
@@ -42,6 +42,13 @@ export default function Home() {
               description="Командний проєкт: інтернет-магазин вітамінів і косметики. Моя частина: головна, каталог, оформлення замовлення."
               imageSrc={cover}
               imageAlt="Обкладинка роботи HealthyTanya"
+              href="#cases"
+            />
+            <WorkCard
+              title="Parkova Kava"
+              description="Мій перший проєкт: аналіз конкурентів, вайрфрейм і дизайн лендингу кав'ярні."
+              imageSrc={cover}
+              imageAlt="Обкладинка роботи Parkova Kava"
               href="#cases"
             />
           </div>
